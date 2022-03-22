@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Federal Program Directory</title>
+<title>The New Deal</title>
 <meta charset="utf-8">
 <style>
 .grid-container {
@@ -16,8 +16,17 @@
   font-size: 30px;
  
 }
-  
-ul {
+.fdr {
+    border: 1px solid #000033;
+    border-radius: 15px;
+    width: 277px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}  
+.umenu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,11 +34,11 @@ ul {
   background-color: #333;
 }
 
-li {
+.menu {
   float: left;
 }
 
-li a {
+.link {
   
   display: block;
   color: white;
@@ -37,8 +46,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-li a:hover:not(.active) {
+.link:hover:not(.active) {
   background-color: #111;
 }
 
@@ -74,7 +82,7 @@ margin-bottom: 5px;
 
 }
 
-img {
+.logo {
     border: 1px solid #000033;
     border-radius: 15px;
     width: 150px;
@@ -97,21 +105,38 @@ box-shadow: 5px 5px 5px #1e1e1e;
 <body>
 <div id="container">
 <header>
-<h1><a href="index.html"><img src="fdr.jpg" alt="logo" /></a>FDR for President</h1>
+<h1><a href="index.html"><img class="logo" src="fdr.jpg" alt="logo" /></a>FDR for President</h1>
 </header>
-<ul>
-  <li><a href="theNewDeal.html">New Deal</a></li>
-  <li><a class="active" href="programDirectory.html">Program Directory</a></li>
-  <li><a href="americanPeoplePlan.html">Plan for the American People</a></li>
- 
+<ul class = "umenu">
+  <li class="menu"><a class="link" href="theNewDeal.html">New Deal</a></li>
+  <li class="menu"><a class="active link" href="programDirectory.html">Program Directory</a></li>
+  <li class="menu"><a class="link"href="americanPeoplePlan.html">Plan for the American People</a></li>
+
 </ul>
 <main>
-
 <h2>Welcome to the federal program directory!</h2>
 <h3>To find the federal program for you, click on the link which best describes your problem.</h3>
-<a href="unemployedHelp.html">> I’m unemployed and I need help.</a>
-<br>
-<a href="financeHelp.html">> I need help with my finances.</a>
+    <strong><p>Middle-Class Americans and Consumers</p></strong>
+        <ul>
+            <li><a href="finance/socialSecurity.html">Social Security Agency</a></li>
+            <li><a href="finance/holc.html">Home Owners Loan Corporation (HOLC)</a></li>
+            <li><a href="finance/fha.html">Federal Housing Administration (FHA)</a></li>
+        
+        </ul>
+    <strong><p>Small Farmers</p></strong>
+        <ul>
+            <li><a href="finance/fca.html">Farm Credit Administration (FCA)</a></li>
+
+        </ul>
+   
+    <strong><p>Laborers</p></strong>
+        <ul>
+            <li><a class = "indent" href="employment/ccc.html">Civillian Conservation Corps (CCC)</a></li>
+            <li><a href="employment/pwa.html">Public Works Administration (PWA)</a></li>
+            <li><a href="employment/wpa.html">Work Progress Administration (WPA)</a></li>
+            <li><a href="employment/tva.html">Tennessee Valley Authority (TVA)</a></li>
+        </ul>
+    
 </main>
 <center> <footer>APUSH New Deal Project - Block 3</footer> <footer>Arnav, Teju, Aditya, Liam, Namyak, Kush</footer>
 </div>
